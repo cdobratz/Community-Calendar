@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <AssemblyTitle>Organization Calendar Management System</AssemblyTitle>
+    <AssemblyDescription>Calendar management system for SACH community with multiple houses</AssemblyDescription>
+    <AssemblyCompany>SACH</AssemblyCompany>
+    <AssemblyProduct>Organization Calendar</AssemblyProduct>
+    <AssemblyCopyright>Copyright © 2025</AssemblyCopyright>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SQLite" Version="1.0.118" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="src\Program.cs" />
+    <Compile Include="src\Models\*.cs" />
+    <Compile Include="src\Data\*.cs" />
+    <Compile Include="src\Forms\*.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="database_schema.sql" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+</Project>
