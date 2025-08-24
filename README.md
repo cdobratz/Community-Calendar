@@ -202,4 +202,4 @@ For technical support or questions about implementation:
 
 ---
 
-**Built with ❤️ for the SACH Community**
+**Built with ❤️ for the [Sunshine Acres Children's Home](https://sunshineacres.org/) Community**
