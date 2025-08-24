@@ -296,28 +296,28 @@ namespace OrganizationCalendar.Data
         {
             return new Event
             {
-                EventId = reader.GetInt32("event_id"),
-                Title = reader.GetString("title"),
-                Description = reader.IsDBNull("description") ? "" : reader.GetString("description"),
-                EventType = Enum.Parse<EventType>(reader.GetString("event_type")),
-                Category = Enum.Parse<EventCategory>(reader.GetString("category")),
-                StartDateTime = reader.GetDateTime("start_datetime"),
-                EndDateTime = reader.IsDBNull("end_datetime") ? null : reader.GetDateTime("end_datetime"),
-                HouseId = reader.IsDBNull("house_id") ? null : reader.GetString("house_id"),
-                Location = reader.IsDBNull("location") ? "" : reader.GetString("location"),
-                CreatedBy = reader.GetString("created_by"),
-                CreatedDate = reader.GetDateTime("created_date"),
-                ModifiedBy = reader.IsDBNull("modified_by") ? null : reader.GetString("modified_by"),
-                ModifiedDate = reader.IsDBNull("modified_date") ? null : reader.GetDateTime("modified_date"),
-                IsRecurring = reader.GetBoolean("is_recurring"),
-                RecurringPattern = reader.IsDBNull("recurring_pattern") ? null : reader.GetString("recurring_pattern"),
-                RecurringEndDate = reader.IsDBNull("recurring_end_date") ? null : reader.GetDateTime("recurring_end_date"),
-                ParentEventId = reader.IsDBNull("parent_event_id") ? null : reader.GetInt32("parent_event_id"),
-                IsCancelled = reader.GetBoolean("is_cancelled"),
-                CancelReason = reader.IsDBNull("cancel_reason") ? null : reader.GetString("cancel_reason"),
-                TeamUpImportId = reader.IsDBNull("teamup_import_id") ? null : reader.GetString("teamup_import_id"),
-                HouseName = reader.IsDBNull("house_name") ? "" : reader.GetString("house_name"),
-                CreatedByName = reader.IsDBNull("created_by_name") ? "" : reader.GetString("created_by_name")
+                EventId = reader.GetInt32(0), // event_id
+                Title = reader.GetString(1), // title
+                Description = reader.IsDBNull(2) ? "" : reader.GetString(2), // description
+                EventType = Enum.Parse<EventType>(reader.GetString(3)), // event_type
+                Category = Enum.Parse<EventCategory>(reader.GetString(4)), // category
+                StartDateTime = reader.GetDateTime(5), // start_datetime
+                EndDateTime = reader.IsDBNull(6) ? null : reader.GetDateTime(6), // end_datetime
+                HouseId = reader.IsDBNull(7) ? null : reader.GetString(7), // house_id
+                Location = reader.IsDBNull(8) ? "" : reader.GetString(8), // location
+                CreatedBy = reader.GetString(9), // created_by
+                CreatedDate = reader.GetDateTime(10), // created_date
+                ModifiedBy = reader.IsDBNull(11) ? null : reader.GetString(11), // modified_by
+                ModifiedDate = reader.IsDBNull(12) ? null : reader.GetDateTime(12), // modified_date
+                IsRecurring = reader.GetBoolean(13), // is_recurring
+                RecurringPattern = reader.IsDBNull(14) ? null : reader.GetString(14), // recurring_pattern
+                RecurringEndDate = reader.IsDBNull(15) ? null : reader.GetDateTime(15), // recurring_end_date
+                ParentEventId = reader.IsDBNull(16) ? null : reader.GetInt32(16), // parent_event_id
+                IsCancelled = reader.GetBoolean(17), // is_cancelled
+                CancelReason = reader.IsDBNull(18) ? null : reader.GetString(18), // cancel_reason
+                TeamUpImportId = reader.IsDBNull(19) ? null : reader.GetString(19), // teamup_import_id
+                HouseName = reader.IsDBNull(20) ? "" : reader.GetString(20), // house_name
+                CreatedByName = reader.IsDBNull(21) ? "" : reader.GetString(21) // created_by_name
             };
         }
     }

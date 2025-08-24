@@ -61,13 +61,13 @@ namespace OrganizationCalendar.Models
     {
         public static readonly List<House> DefaultHouses = new List<House>
         {
-            new House { HouseId = "AV", HouseName = "Ashford Village", Capacity = 10 },
-            new House { HouseId = "SP", HouseName = "Spring Place", Capacity = 10 },
-            new House { HouseId = "NL", HouseName = "North Lodge", Capacity = 10 },
-            new House { HouseId = "LC", HouseName = "Liberty Court", Capacity = 10 },
-            new House { HouseId = "WH", HouseName = "Westwood House", Capacity = 10 },
-            new House { HouseId = "HH", HouseName = "Heritage House", Capacity = 10 },
-            new House { HouseId = "BP", HouseName = "Brookside Place", Capacity = 10 }
+            new House { HouseId = "AV", HouseName = "Aloe Vera", Capacity = 10 },
+            new House { HouseId = "SP", HouseName = "Scotty's Place", Capacity = 10 },
+            new House { HouseId = "NL", HouseName = "Neely", Capacity = 10 },
+            new House { HouseId = "LC", HouseName = "Loren's Cottage", Capacity = 10 },
+            new House { HouseId = "WH", HouseName = "Whiteman", Capacity = 10 },
+            new House { HouseId = "HH", HouseName = "Hemmer House", Capacity = 10 },
+            new House { HouseId = "BP", HouseName = "Bonnie's Place", Capacity = 10 }
         };
 
         public static House? GetHouseById(string houseId)

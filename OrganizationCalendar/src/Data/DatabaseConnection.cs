@@ -19,7 +19,7 @@ namespace OrganizationCalendar.Data
                 databasePath = Path.Combine(appDirectory, "organization_calendar.db");
             }
 
-            _connectionString = $"Data Source={databasePath};Version=3;";
+            _connectionString = $"Data Source={databasePath};";
         }
 
         public SQLiteConnection Connection
@@ -122,13 +122,13 @@ namespace OrganizationCalendar.Data
 
                 -- Insert default houses
                 INSERT OR IGNORE INTO Houses (house_id, house_name, capacity) VALUES
-                ('AV', 'Ashford Village', 10),
-                ('SP', 'Spring Place', 10),
-                ('NL', 'North Lodge', 10),
-                ('LC', 'Liberty Court', 10),
-                ('WH', 'Westwood House', 10),
-                ('HH', 'Heritage House', 10),
-                ('BP', 'Brookside Place', 10);
+                ('AV', 'Aloe Vera', 10),
+                ('SP', 'Scotty''s Place', 10),
+                ('NL', 'Neely', 10),
+                ('LC', 'Loren''s Cottage', 10),
+                ('WH', 'Whiteman', 10),
+                ('HH', 'Hemmer House', 10),
+                ('BP', 'Bonnie''s Place', 10);
 
                 -- Insert default admin user
                 INSERT OR IGNORE INTO Users (user_id, username, role, full_name) VALUES

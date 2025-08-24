@@ -6,7 +6,6 @@
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>disable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -19,19 +18,10 @@
     <FileVersion>1.0.0.0</FileVersion>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="System.Data.SQLite" Version="1.0.118" />
-  </ItemGroup>
+
 
   <ItemGroup>
-    <Compile Include="src\Program.cs" />
-    <Compile Include="src\Models\*.cs" />
-    <Compile Include="src\Data\*.cs" />
-    <Compile Include="src\Forms\*.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="database_schema.sql" CopyToOutputDirectory="PreserveNewest" />
+    <PackageReference Include="System.Data.SQLite" Version="1.0.119" />
   </ItemGroup>
 
 </Project>

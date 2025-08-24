@@ -45,7 +45,7 @@ namespace OrganizationCalendar.Data
                     EventType = EventType.CampusActivity,
                     Category = EventCategory.Mandatory,
                     StartDateTime = GetNextWeekday(today, DayOfWeek.Monday).AddHours(19),
-                    EndDateTime = GetNextWeekday(today, DayOfWeek.Monday).AddHours(20, 30),
+                    EndDateTime = GetNextWeekday(today, DayOfWeek.Monday).AddHours(20.5),
                     HouseId = null, // Community-wide
                     Location = "Main Hall",
                     CreatedBy = "admin"
