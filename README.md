@@ -10,13 +10,13 @@ A Windows-based calendar management system designed for residential organization
 ## 🏠 **Organization Structure**
 
 **7 Houses Supported:**
-- **AV** - Ashford Village
-- **SP** - Spring Place  
-- **NL** - North Lodge
-- **LC** - Liberty Court
-- **WH** - Westwood House
-- **HH** - Heritage House
-- **BP** - Brookside Place
+- **AV** - Aloe Vera
+- **SP** - Scotty's Place  
+- **NL** - Neely
+- **LC** - Loren's Cottage
+- **WH** - Whiteman
+- **HH** - Hemmer House
+- **BP** - Bonnie's Place
 
 ## ✨ **Features**
 
@@ -176,7 +176,7 @@ See [TEAMUP_INTEGRATION.md](TEAMUP_INTEGRATION.md) for detailed instructions.
 
 ## 🤝 **Contributing**
 
-This project is specifically designed for SACH community needs. For feature requests or bug reports:
+This project is specifically designed for [Sunshine Acres Children's Home](https://sunshineacres.org/) community needs. For feature requests or bug reports:
 
 1. Open an issue describing the request
 2. Include house/user role context
